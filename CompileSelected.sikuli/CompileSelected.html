@@ -1,0 +1,132 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>CompileSelected.sikuli</h2> <a href="CompileSelected.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+f=open(<span class="str">"inputFile.txt"</span>,<span class="str">"r"</span>)
+lines=f.readlines()
+objList=lines[<span class="dig">0</span>].rstrip(<span class="str">'\n'</span>)
+f.close()
+
+<span class="kw">if</span> exists(<img src="SiebelToolsHome.png" />):
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="cmt">#click("Applet.png")</span>
+<span class="kw">else</span> :
+    <span class="kw">print</span>(<span class="str">"Siebel Tools Homepage not Loaded"</span>)
+    exit(<span class="dig">1</span>)
+<span class="kw">if</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Applet"</span>):
+    <span class="skw">click</span>(<img src="Applet.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Application"</span>):
+    <span class="skw">click</span>(<img src="Application.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Screen"</span>):
+    <span class="skw">click</span>(<img src="Screer.png" />)
+<span class="kw">else</span>:
+    exit(<span class="dig">1</span>)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">type</span> (<span class="str">"q"</span>,KeyModifier.CTRL)
+<span class="skw">wait</span>(<img src="queryObjects.png" />)
+<span class="cmt">#wait("QueryTextBox.png")</span>
+paste (objList)
+<span class="skw">type</span> (Key.ENTER)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+exists(<img src="ListObjectView.png" />)
+keyDown(Key.SHIFT)
+<span class="skw">click</span>(<img src="1535239086318.png" />)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">rightClick</span>(<img src="1535118531389.png" />)
+exists(<img src="rightClick.png" />)
+<span class="skw">click</span>(<img src="compile_selected_rightClick.png" />)
+
+<span class="cmt">#wait("1535106249197.png")</span>
+<span class="cmt">#else:</span>
+<span class="cmt">#    print("No Objects Selected")</span>
+<span class="cmt">#    exit(1)</span>
+<span class="cmt">#type( Key.F7, KeyModifier.CTRL)</span>
+exists(<img src="objectCompilerDialog.png" />)
+exists(<img src="ObjectCompilerHeader.png" />)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">find</span>(<img src="BrowseFileTextBox.png" />)
+<span class="skw">click</span>(<img src="BrowseSRF.png" />)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+exists(<img src="browse_dialog.png" />)
+
+<span class="cmt">#wait("SaveAsDialog.png")</span>
+<span class="skw">wait</span>(<img src="SaveAndCancel.png" />)
+<span class="cmt">#wait(2)</span>
+<span class="skw">type</span>(<span class="str">"siebel_sia_08_20_2018.srf"</span>)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">click</span>(<img src="saveSRF.png" />)
+exists(<img src="objectCompilerDialog.png" />)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">click</span>(<img src="Qompile.png" />)
+<span class="skw">wait</span>(<span class="dig">10</span>)
+</pre>
+</body>
+</html>

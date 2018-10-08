@@ -1,0 +1,142 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>tool_object_compiler.sikuli</h2> <a href="tool_object_compiler.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">try</span>:
+    <span class="skw">wait</span>(<img src="MENU.png" />,<span class="dig">50</span>)
+    <span class="kw">print</span> <span class="str">"Wait Siebel Tool"</span>
+    <span class="kw">if</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Applet"</span>):
+         <span class="skw">click</span>(<img src="Applet-tree-item.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Application"</span>):
+         <span class="skw">click</span>(<img src="1508933627193.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Business_Service"</span>):
+         <span class="skw">click</span>(<img src="Business service-tree-item.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"View"</span>):
+         <span class="skw">click</span>(<img src="view-tree-item.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Business_Component"</span>):
+        <span class="skw">click</span>(<img src="BC.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Business_Object"</span>):
+        <span class="skw">click</span>(<img src="BO.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"EIM_Interface_Table"</span>):
+        <span class="skw">click</span>(<img src="eim-t-tree-item.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Integration_Object"</span>):
+        <span class="skw">click</span>(<img src="IO.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Link"</span>):
+        <span class="skw">click</span>(<img src="link-tree-item.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Pick_List"</span>):
+        <span class="skw">click</span>(<img src="PICKLIST.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Screen"</span>):
+        <span class="skw">click</span>(<img src="screen-tree-item.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Web_Template"</span>):
+        <span class="skw">click</span>(<img src="wt-tree-item.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Workflow_Process"</span>):
+       <span class="skw">click</span>(<img src="wf-tree-item.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Web_Page"</span>):
+      <span class="skw">click</span>(<img src="1508928663872.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Symbolic_String"</span>):
+      <span class="skw">click</span>(<img src="1508928687048.png" />)
+    <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Table"</span>):
+      <span class="skw">click</span>(<img src="1508928675719.png" />)
+    <span class="kw">else</span>:
+         exit(<span class="dig">1</span>)
+    <span class="skw">type</span> ( <span class="str">"q"</span>,KeyModifier.CTRL)
+    <span class="skw">wait</span>(<img src="Name-text-input.png" />,<span class="dig">200</span>)
+    <span class="skw">click</span>(<img src="Name-text-input.png" />)
+    paste( sys.argv[<span class="dig">2</span>])
+    <span class="skw">type</span> ( Key.ENTER)
+
+    <span class="kw">try</span>:
+        <span class="skw">wait</span>(<img src="Arrow-tree-element.png" />,<span class="dig">200</span>)
+    <span class="kw">except</span> FindFailed:
+        <span class="skw">click</span>(<img src="Siebel Objects-tree-item.png" />)
+        <span class="kw">print</span> <span class="str">"Object not found in repository"</span>
+        exit(<span class="dig">1</span>)
+    <span class="skw">type</span> ( Key.F7, KeyModifier.CTRL)
+
+    <span class="kw">print</span> <span class="str">"LOG: Wait compiler window"</span>
+    <span class="skw">wait</span>(<img src="Object Compile_Selected Objectsr-pane-header.png" />,<span class="dig">200</span>)
+
+    <span class="skw">click</span>(<img src="BROWSE.png" />)
+    <span class="skw">wait</span>(<img src="save-and-cancel-button.png.png" />,<span class="dig">50</span>)
+    paste(sys.argv[<span class="dig">3</span>])
+    <span class="skw">click</span>(<img src="save_button.png.png" />)
+    <span class="kw">print</span> <span class="str">"LOG: Set path of SRF file"</span>
+    waitVanish(<img src="save-as.png.png" />,<span class="dig">200</span>)
+    <span class="skw">click</span>(<img src="Compile-button.png" />)
+    waitVanish(<img src="Object Compiler-pane-header.png" />,<span class="dig">300</span>)
+    <span class="skw">click</span>(<img src="Siebel Objects-tree-item.png" />)
+<span class="kw">except</span> FindFailed:
+    <span class="skw">click</span>(<img src="Siebel Objects-tree-item.png" />)
+    <span class="kw">print</span> <span class="str">"ERROR: Something wrong with Sandbox Screen. Image find failed"</span>
+    exit(<span class="dig">1</span>)
+</pre>
+</body>
+</html>

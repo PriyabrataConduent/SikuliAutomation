@@ -70,44 +70,164 @@
 <h2>SiebelSikuliAutomation.sikuli</h2> <a href="SiebelSikuliAutomation.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
-<span class="skw">click</span>(<img src="1533805805639.png" />)
-<span class="skw">wait</span>(<img src="Search.png" />)
-<span class="skw">type</span>(<span class="str">"Siebel Tools"</span>+Key.ENTER)
-<span class="skw">wait</span>(<img src="1533806419593.png" />)
-<span class="skw">wait</span>(<span class="dig">1</span>)
-<span class="skw">wait</span>(<img src="1533806623650.png" />)
-<span class="skw">type</span>(<span class="str">"sadmin"</span>+Key.TAB)
-<span class="skw">wait</span>(<img src="1533807033983.png" />)
-<span class="skw">type</span>(<span class="str">"s3dm15q4"</span>+Key.TAB)
-<span class="skw">type</span>(<span class="str">"Server"</span>+Key.ENTER)
-<span class="skw">wait</span>(<span class="dig">20</span>)
-exists(<img src="1534416757603.png" />)
-<span class="skw">find</span>(<img src="1534416801560.png" />)
-<span class="skw">click</span>(<img src="applet.png" />)
+<span class="kw">import</span> sys
+<span class="kw">import</span> os
+
+<span class="cmt">#login=open("accounts.txt","r")</span>
+<span class="cmt">#lines=login.readlines()</span>
+<span class="cmt">#username=lines[0].rstrip('\n')</span>
+<span class="cmt">#password=lines[1].rstrip('\n')</span>
+<span class="cmt">#server=lines[2].rstrip('\n')</span>
+<span class="cmt">#login.close()</span>
+
+f=open(<span class="str">"inputFile.txt"</span>,<span class="str">"r"</span>)
+lines=f.readlines()
+objList=lines[<span class="dig">0</span>].rstrip(<span class="str">'\n'</span>)
+f.close()
+
+<span class="cmt">#click("1533805805639.png")</span>
+<span class="cmt">#wait("Search.png")</span>
 <span class="skw">wait</span>(<span class="dig">2</span>)
-<span class="skw">click</span>(<img src="1534420437010.png" />)
+<span class="cmt">#type("Siebel Tools"+Key.ENTER)</span>
+<span class="cmt">#wait(3)</span>
+<span class="cmt">#click("1533806419593.png")</span>
+<span class="cmt">#wait(2)</span>
+<span class="cmt">#wait("1533806623650.png")</span>
+<span class="cmt">#type(username+Key.TAB)</span>
+<span class="cmt">#wait("1533807033983.png")</span>
+<span class="cmt">#type(password+Key.TAB)</span>
+<span class="cmt">#type(server+Key.ENTER)</span>
+<span class="cmt">#wait(20)</span>
+<span class="skw">find</span>(<img src="1538337667266.png" />)
+<span class="kw">if</span> exists(<img src="1534416757603.png" />):
+    <span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="kw">else</span>:
+    <span class="skw">click</span>(<img src="1538337667266.png" />)
+<span class="skw">find</span>(<img src="1534416801560.png" />)
 <span class="skw">wait</span>(<span class="dig">1</span>)
-<span class="skw">type</span>(Key.F7, KeyModifier.CTRL)
+<span class="cmt">#click("applet.png")</span>
+<span class="kw">if</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Applet"</span>):
+    <span class="skw">click</span>(<img src="Applet-1.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Application"</span>):
+    <span class="skw">click</span>(<img src="Application.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Screen"</span>):
+    <span class="skw">click</span>(<img src="Screen.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Business Component"</span>):
+    <span class="skw">click</span>(<img src="BusinessComp.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Business Object"</span>):
+    <span class="skw">click</span>(<img src="QBusinessUbi.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Business Service"</span>):
+    <span class="skw">click</span>(<img src="BusinessService.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Class"</span>):
+    <span class="skw">click</span>(<img src="Class.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Command"</span>):
+    <span class="skw">click</span>(<img src="Command.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"DLL"</span>):
+    <span class="skw">click</span>(<img src="DLL.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"EIM Interface Table"</span>):
+    <span class="skw">click</span>(<img src="EIMInterfaceTable.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Entity Relationship Diagram"</span>):
+    <span class="skw">click</span>(<img src="EntityRelationshipDiagram.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Link"</span>):
+    <span class="skw">click</span>(<img src="Link.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Pick List"</span>):
+    <span class="skw">click</span>(<img src="PickList.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Project"</span>):
+    <span class="skw">click</span>(<img src="Proiect.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Repository"</span>):
+    <span class="skw">click</span>(<img src="Repository.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Symbolic String"</span>):
+    <span class="skw">click</span>(<img src="SymbolicString.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Table"</span>):
+    <span class="skw">click</span>(<img src="Table.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Task"</span>):
+    <span class="skw">click</span>(<img src="Task.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Toolbar"</span>):
+    <span class="skw">click</span>(<img src="Toolbar.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"View"</span>):
+    <span class="skw">click</span>(<img src="View.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Web Page"</span>):
+    <span class="skw">click</span>(<img src="WebPage.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Web Template"</span>):
+    <span class="skw">click</span>(<img src="WebTemplate.png" />)
+<span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Workflow Process"</span>):
+    <span class="skw">click</span>(<img src="WorkflowProcess.png" />)
+
+<span class="kw">else</span>:
+    exit(<span class="dig">1</span>)
+
+<span class="skw">wait</span>(<span class="dig">5</span>)
+<span class="skw">type</span> (<span class="str">"q"</span>,KeyModifier.CTRL)
+<span class="skw">wait</span>(<img src="Name.png" />)
+paste(objList)
+<span class="skw">type</span> (Key.ENTER)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+exists(<img src="ListObjectView.png" />)
+keyDown(Key.SHIFT)
+<span class="cmt">#click("1535239086318.png")</span>
+<span class="skw">click</span>(<img src="1535276628271.png" />)
+
+<span class="skw">wait</span>(<span class="dig">1</span>)
+
+<span class="cmt">#click("1534775267332.png")</span>
+<span class="cmt">#wait(1)</span>
+<span class="cmt">#keyDown(Key.CTRL)</span>
+<span class="cmt">#click("1534775287846.png")</span>
+<span class="cmt">#keyDown(Key.CTRL)</span>
+<span class="cmt">#click("1534775308189.png")</span>
+<span class="cmt">#keyDown(Key.CTRL)</span>
+<span class="cmt">#click("1534775334889.png")</span>
+<span class="skw">rightClick</span>(<img src="1535118531389.png" />)
+exists(<img src="rightClick.png" />)
+<span class="skw">click</span>(<img src="compile_selected_rightClick.png" />)
+<span class="cmt">#type(Key.F7, KeyModifier.CTRL)</span>
 <span class="skw">find</span>(<img src="1534453184581.png" />)
-<span class="skw">wait</span>(<span class="dig">1</span>)
-<span class="skw">wait</span>(<img src="1534453234967.png" />)
-<span class="skw">click</span>(<img src="1534453268029.png" />)
-<span class="skw">wait</span>(<span class="dig">3</span>)
-<span class="skw">type</span>(<span class="str">"siebel_sia_08_16_2018.srf"</span>)
+<span class="cmt">#if exists("1534453184581.png"):</span>
+<span class="cmt">#    wait(2)</span>
+<span class="cmt">#    find("Siebelteposi.png")</span>
+<span class="cmt">#elif exists("ObjectCompil-1.png"):</span>
+    <span class="cmt">#click("Siebelreposi.png")</span>
+ <span class="cmt">#   wait(2)</span>
+ <span class="cmt">#   find("iebeteposito-1.png")</span>
+
+    <span class="cmt">#find("iebeteposito.png")</span>
+    <span class="cmt">#find("1534453234967.png")</span>
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="cmt">#wait("1534453234967.png")</span>
+<span class="skw">find</span>(<img src="DbieclCompil.png" />)
+<span class="skw">wait</span>(<img src="Siebelteposi-1.png" />)
+<span class="skw">click</span>(<img src="Browse.png" />)
+
+<span class="cmt">#click("1534453268029.png")</span>
+<span class="skw">wait</span>(<span class="dig">5</span>)
+<span class="skw">type</span>(<span class="str">"D:\Full_Compile\siebel_sia_09_16_2018.srf"</span>)
 <span class="skw">click</span>(<img src="1534454073561.png" />)
 <span class="skw">wait</span>(<img src="1534454164894.png" />)
+exists(<img src="1534453184581.png" />)
+
+<span class="skw">wait</span>(<span class="dig">2</span>)
 <span class="skw">click</span>(<img src="1534454247270.png" />)
+<span class="kw">print</span>(<span class="str">"Compilation Process Started"</span>)
 <span class="skw">wait</span>(<span class="dig">50</span>)
 <span class="kw">if</span> exists(<img src="1534490859009.png" />):
     <span class="skw">wait</span>(<img src="1534490884832.png" />)
     <span class="skw">find</span>(<img src="1534490902768.png" />)
     <span class="skw">click</span>(<img src="1534490939481.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">wait</span>(<img src="1534492161689.png" />)
+
+<span class="cmt">#    click("1534492179543.png")</span>
 <span class="kw">elif</span> exists(<img src="1534491998544.png" />):
     <span class="skw">wait</span>(<img src="1534492064606.png" />)
     <span class="skw">click</span>(<img src="1534492092335.png" />)
+    <span class="kw">print</span>(<span class="str">"Compilation Process Stopped due to error"</span>)
 <span class="kw">else</span> :
-    <span class="skw">wait</span>(<img src="1534492161689.png" />)
-    <span class="skw">click</span>(<img src="1534492179543.png" />)
+    <span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="cmt">#    wait("1534492161689.png")</span>
+<span class="cmt">#    click("1534492179543.png")</span>
+<span class="kw">print</span>(<span class="str">"Compilation Process Completed"</span>)
+<span class="skw">click</span>(<img src="7SiebelUbiec.png" />)
+<span class="kw">print</span>(<span class="str">"Done"</span>)
 </pre>
 </body>
 </html>

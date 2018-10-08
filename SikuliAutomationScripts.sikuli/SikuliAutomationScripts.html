@@ -70,17 +70,39 @@
 <h2>SikuliAutomationScripts.sikuli</h2> <a href="SikuliAutomationScripts.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
-<span class="skw">click</span>(<img src="1533805805639.png" />)
-<span class="skw">wait</span>(<img src="Search.png" />)
-<span class="skw">type</span>(<span class="str">"Siebel Tools"</span>+Key.ENTER)
+<span class="kw">import</span> sys
+<span class="kw">import</span> os
+
+f=open(<span class="str">"accounts.txt"</span>,<span class="str">"r"</span>)
+lines=f.readlines()
+username=lines[<span class="dig">0</span>].rstrip(<span class="str">'\n'</span>)
+password=lines[<span class="dig">1</span>].rstrip(<span class="str">'\n'</span>)
+server=lines[<span class="dig">2</span>].rstrip(<span class="str">'\n'</span>)
+f.close()
+
+<span class="cmt">#os.system('"D:\Siebel\8.1.1.16.0\Tools\BIN\siebdev.exe"')</span>
+vcCMD = <span class="str">'"D:\Siebel\8.1.1.16.0\Tools\BIN\siebdev.exe"'</span>
+App.open(<span class="str">'CMD /C '</span> + vcCMD)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">click</span>(<img src="1533806419593.png" />)
+
+<span class="cmt">#click("1533805805639.png")</span>
+<span class="cmt">#wait("Search.png")</span>
+<span class="cmt">#wait(1)</span>
+<span class="cmt">#type("Siebel Tools"+Key.ENTER)</span>
+<span class="skw">wait</span>(<span class="dig">3</span>)
 <span class="skw">wait</span>(<img src="1533806419593.png" />)
 <span class="skw">wait</span>(<img src="1533806623650.png" />)
-<span class="skw">type</span>(<span class="str">"sadmin"</span>+Key.TAB)
+<span class="skw">type</span>(username+Key.TAB)
 <span class="skw">wait</span>(<img src="1533807033983.png" />)
-<span class="skw">type</span>(<span class="str">"s3dm15q4"</span>+Key.TAB)
-<span class="skw">type</span>(<span class="str">"Server"</span>+Key.ENTER)
+<span class="skw">type</span>(password+Key.TAB)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">type</span>(server+Key.ENTER)
 <span class="skw">wait</span>(<img src="1533872753866.png" />)
 <span class="skw">type</span>(Key.ENTER)
+<span class="skw">wait</span>(<span class="dig">20</span>)
+<span class="skw">wait</span>(<img src="QSiebelTools.png" />, <span class="dig">200</span>)
+<span class="skw">wait</span>(<span class="dig">20</span>)
 </pre>
 </body>
 </html>
