@@ -1,0 +1,57 @@
+f=open("inputFile.txt","r")
+lines=f.readlines()
+objList=lines[0].rstrip('\n')
+f.close()
+
+if exists("SiebelToolsHome.png"):
+    wait(2)
+    #click("Applet.png")
+else :
+    print("Siebel Tools Homepage not Loaded")
+    exit(1)
+if (sys.argv[1] == "Applet"):
+    click("Applet.png")
+elif (sys.argv[1] == "Application"):
+    click("Application.png")
+elif (sys.argv[1] == "Screen"):
+    click("Screer.png")
+else:
+    exit(1)
+wait(1)
+type ("q",KeyModifier.CTRL)
+wait("queryObjects.png")
+#wait("QueryTextBox.png")
+paste (objList)
+type (Key.ENTER)
+wait(2)
+exists("ListObjectView.png")
+keyDown(Key.SHIFT)
+click("1535239086318.png")
+wait(1)
+rightClick("1535118531389.png")
+exists("rightClick.png")
+click("compile_selected_rightClick.png")
+
+#wait("1535106249197.png")
+#else:
+#    print("No Objects Selected")
+#    exit(1)
+#type( Key.F7, KeyModifier.CTRL)
+exists("objectCompilerDialog.png")
+exists("ObjectCompilerHeader.png")
+wait(1)
+find("BrowseFileTextBox.png")
+click("BrowseSRF.png")
+wait(1)
+exists("browse_dialog.png")
+
+#wait("SaveAsDialog.png")
+wait("SaveAndCancel.png")
+#wait(2)
+type("siebel_sia_08_20_2018.srf")
+wait(1)
+click("saveSRF.png")
+exists("objectCompilerDialog.png")
+wait(1)
+click("Qompile.png")
+wait(10)   

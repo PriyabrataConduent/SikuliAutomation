@@ -1,0 +1,16 @@
+ Applet
+ 
+ ABO Bulk Request - Quote Form Applet Dashboard
+ ABO Bulk Request Action Set List Applet
+ 
+ 
+ 
+ Business Service
+ ABO Bulk Request Import Service
+ ADM Status Report Business Service
+ 
+ 
+ copy C:\Users\30096862\Documents\Testing\postload.js \\10.36.20.41\d$\Testing\
+ ren \\10.36.20.41\d$\Siebel\15.0.0.0.0\ses\siebsrvr\OBJECTS\enu\siebel_sia.srf siebel_sia.srf_20181219
+ ren source_file_folder_path new_name
+ ren \\10.36.20.41\d$\Testing\postload.js postload.js_renamed

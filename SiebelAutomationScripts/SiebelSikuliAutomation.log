@@ -1,0 +1,22 @@
++++ running this Java
++++ trying to run SikuliX
++++ using: -Xms64M -Xmx512M -Dfile.encoding=UTF-8 -Dsikuli.FromCommandLine -jar C:\Users\50000339\Documents\SikuliProjects\sikulix.jar -r SiebelSikuliAutomation.sikuli --args "Business Component"
+[log] CLICK on L(27,748)@S(0)[0,0 1364x768] (630 msec)
+[log]  TYPE "Siebel Tools#ENTER."
+[log] CLICK on L(682,362)@S(0)[0,0 1364x768] (576 msec)
+[log]  TYPE "sadmin#TAB."
+[log]  TYPE "s3dm15q4#TAB."
+[log]  TYPE "Server#ENTER."
+[log] CLICK on L(106,252)@S(0)[0,0 1364x768] (706 msec)
+[log] ( Ctrl )  TYPE "q"
+[log]  TYPE "#ENTER."
+[log] CLICK on L(294,270)@S(0)[0,0 1364x768] (687 msec)
+[log] RIGHT CLICK on L(311,268)@S(0)[0,0 1364x768] (659 msec)
+[log] CLICK on L(402,399)@S(0)[0,0 1364x768] (573 msec)
+[log] CLICK on L(786,431)@S(0)[0,0 1364x768] (548 msec)
+[log]  TYPE "D:\Full_Compile\siebel_sia_09_16_2018.srf"
+[log] CLICK on L(951,606)@S(0)[0,0 1364x768] (585 msec)
+[log] CLICK on L(876,183)@S(0)[0,0 1364x768] (577 msec)
+Compilation Process Started
+[log] CLICK on L(1355,8)@S(0)[0,0 1364x768] (778 msec)
+Compilation Process Completed
