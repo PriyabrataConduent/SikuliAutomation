@@ -3,10 +3,10 @@ import glob
 import os
 import sys
 
-textFile = "D:\\Automation_Siebel_Project\\deploy\\latestfile.txt"
-outFile = "D:\\Automation_Siebel_Project\\deploy\\NewFile.txt"
-BASE_DIR = "D:\\Automation_Siebel_Project\\deploy\\"
-list_of_files = glob.glob('D:\\IncrementalCompile\\deploy\\*.xls')
+textFile = "D:\\Automation_Siebel_Project\\deploy\\xls\\latestfile.txt"
+outFile = "D:\\Automation_Siebel_Project\\deploy\\xls\\NewFile.txt"
+BASE_DIR = "D:\\Automation_Siebel_Project\\deploy\\xls\\"
+list_of_files = glob.glob('D:\\Automation_Siebel_Project\\deploy\\xls\\*.xls')
 files = [os.path.join(BASE_DIR, x) for x in os.listdir(BASE_DIR) if x.endswith(".xls")]
 newest = max(files , key = os.path.getctime)
 

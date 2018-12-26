@@ -78,24 +78,23 @@ lines=f.readlines()
 objList=lines[<span class="dig">0</span>].rstrip(<span class="str">'\n'</span>)
 f.close()
 
-<span class="skw">find</span>( <img src="1545373968338.png" /> )
-<span class="cmt">#wait( "1545243629958.png" )</span>
-<span class="cmt">#waitVanish("siebel_icon_red.png")</span>
-hover( <img src="siebel_icon_red.png" /> )
+exists( <img src="1545373968338.png" /> )
 
 <span class="kw">if</span> exists(<img src="1545243832619.png" />):
 
     <span class="skw">wait</span>(<span class="dig">1</span>)
 <span class="kw">else</span>:
-    <span class="cmt">#click("1545374005703.png")</span>
+    <span class="skw">find</span>( <img src="1545373968338.png" /> )
+    hover( <img src="siebel_icon_red.png" /> )
     <span class="skw">click</span>( <img src="siebel_icon_red.png" /> )
-<span class="skw">wait</span>(<img src="siebel_icon_red.png" />)
+<span class="cmt">#wait("siebel_icon_red.png")</span>
+<span class="cmt">#find("1545243832619.png")</span>
 <span class="skw">find</span>(<img src="1545243931419.png" />)
 <span class="skw">find</span>(<img src="1545629350116.png" />)
-<span class="skw">click</span>(<img src="1545629367576.png" />)
+<span class="cmt">#click("1545629367576.png")</span>
 
 <span class="skw">wait</span>(<span class="dig">2</span>)
-<span class="skw">find</span>(<img src="1545289173476.png" />)
+<span class="cmt">#find("1545289173476.png")</span>
 <span class="skw">wait</span>(<span class="dig">2</span>)
 exists(<img src="1545289203954.png" />)
 <span class="kw">if</span>( sys.argv[<span class="dig">1</span>] == <span class="str">"Applet"</span> ):
@@ -145,9 +144,15 @@ exists(<img src="1545289203954.png" />)
 <span class="kw">elif</span> (sys.argv[<span class="dig">1</span>] == <span class="str">"Workflow Process"</span>):
     <span class="skw">click</span>(<img src="WorkflowProcess.png" />)
 <span class="kw">else</span> :
-    exit
-<span class="skw">wait</span>(<span class="dig">3</span>)
-<span class="skw">type</span>(<span class="str">'q'</span>, Key.CTRL)
+    exit(<span class="dig">1</span>)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">find</span>(<img src="1545757293389.png" />)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">click</span>(<img src="1545757310532.png" />)
+exists(<img src="QueryDialog.png" />)
+<span class="skw">click</span>(<img src="newQueryClick.png" />)
+<span class="cmt">#click("newQuery.png")</span>
+<span class="cmt">#type('q', Key.CTRL)</span>
 <span class="skw">wait</span>(<img src="1545289448622.png" />)
 paste(objList)
 <span class="skw">type</span>(Key.ENTER)
@@ -168,7 +173,7 @@ exists(<img src="rightClickDialog.png" />)
 <span class="skw">wait</span>(<span class="dig">1</span>)
 exists(<img src="1545291971600.png" />)
 
-<span class="skw">wait</span>(<img src="1545292030135.png" />)
+<span class="cmt">#wait("1545292030135.png") </span>
 <span class="cmt">#exists("1545292118361.png")</span>
 <span class="skw">wait</span>(<span class="dig">1</span>)
 exists(<img src="1545293089172.png" />)
@@ -186,8 +191,10 @@ exists(<img src="1545374122061.png" />)
 <span class="skw">click</span>(<img src="1545293373821.png" />)
 <span class="skw">wait</span>(<span class="dig">5</span>)
 <span class="kw">print</span>(<span class="str">"Done"</span>)
-
-exit
+<span class="skw">click</span>(<img src="1545629367576.png" />)
+<span class="cmt">#find("SiebelToolsHeader.png" )</span>
+<span class="cmt">#click("1545765799289.png")</span>
+exit(<span class="dig">1</span>)
 </pre>
 </body>
 </html>

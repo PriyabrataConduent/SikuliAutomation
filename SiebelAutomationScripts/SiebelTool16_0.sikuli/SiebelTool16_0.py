@@ -6,24 +6,23 @@ lines=f.readlines()
 objList=lines[0].rstrip('\n')
 f.close()
 
-find( "1545373968338.png" )
-#wait( "1545243629958.png" )
-#waitVanish("siebel_icon_red.png")
-hover( "siebel_icon_red.png" )
+exists( "1545373968338.png" )
 
 if exists("1545243832619.png"):
     
     wait(1)
 else:
-    #click("1545374005703.png")
+    find( "1545373968338.png" )
+    hover( "siebel_icon_red.png" )
     click( "siebel_icon_red.png" )
-wait("siebel_icon_red.png")
+#wait("siebel_icon_red.png")
+#find("1545243832619.png")
 find("1545243931419.png")
 find("1545629350116.png")
-click("1545629367576.png")
+#click("1545629367576.png")
 
 wait(2)
-find("1545289173476.png")
+#find("1545289173476.png")
 wait(2)
 exists("1545289203954.png")
 if( sys.argv[1] == "Applet" ):
@@ -73,9 +72,15 @@ elif (sys.argv[1] == "Web Template"):
 elif (sys.argv[1] == "Workflow Process"):
     click("WorkflowProcess.png")
 else :
-    exit
-wait(3)
-type('q', Key.CTRL)
+    exit(1)
+wait(1)
+find("1545757293389.png")
+wait(1)
+click("1545757310532.png")
+exists("QueryDialog.png")
+click("newQueryClick.png")
+#click("newQuery.png")
+#type('q', Key.CTRL)
 wait("1545289448622.png")
 paste(objList)
 type(Key.ENTER)
@@ -96,7 +101,7 @@ click("CompileSelected.png")
 wait(1)
 exists("1545291971600.png")
 
-wait("1545292030135.png") 
+#wait("1545292030135.png") 
 #exists("1545292118361.png")
 wait(1)
 exists("1545293089172.png")
@@ -114,5 +119,7 @@ wait(2)
 click("1545293373821.png")
 wait(5)
 print("Done")
-
-exit
+click("1545629367576.png")
+#find("SiebelToolsHeader.png" )
+#click("1545765799289.png")
+exit(1)

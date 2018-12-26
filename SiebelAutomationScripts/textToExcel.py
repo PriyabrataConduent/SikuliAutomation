@@ -1,12 +1,13 @@
-# mypath should be the complete path for the directory containing the input text files
-
-
-mypath = "D:\\Automation_Siebel_Project\\deploy\\"
-
-
+import xlwt
+import xlrd
 from os import listdir
 from os.path import isfile, join
+
+# mypath should be the complete path for the directory containing the input text files
+mypath = "D:\\Automation_Siebel_Project\\deploy\\"
+
 textfiles = [ join(mypath,f) for f in listdir(mypath) if isfile(join(mypath,f)) and '.txt' in  f]
+
 
 def is_number(s):
     try:
@@ -15,8 +16,6 @@ def is_number(s):
     except ValueError:
         return False        
 
-import xlwt
-import xlrd
 
 style = xlwt.XFStyle()
 style.num_format_str = '#,###0.00'  
