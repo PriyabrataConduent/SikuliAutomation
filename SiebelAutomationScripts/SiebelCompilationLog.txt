@@ -1,0 +1,424 @@
+D:\Automation_Siebel_Project\deploy\Applet.xls
+D:\Automation_Siebel_Project\deploy\Business Component.xls
+2 File(s) copied
+File count = 2
+
+Waiting for 2 seconds, press CTRL+C to quit ...10
+"Business Component"
+Formating User Input
+Now Compilation will Start for "Business Component"
++++ running this Java
++++ trying to run SikuliX
++++ using: -Xms64M -Xmx512M -Dfile.encoding=UTF-8 -Dsikuli.FromCommandLine -jar D:\Automation_Siebel_Project\SiebelAutomationScripts\sikulix.jar -r D:\Automation_Siebel_Project\SiebelAutomationScripts\SiebelTool16_0.sikuli --args "Business Component"
+[log] CLICK on L(265,748)@S(0)[0,0 1366x768] (524 msec)
+[log] CLICK on L(106,252)@S(0)[0,0 1366x768] (520 msec)
+[log] CLICK on L(231,36)@S(0)[0,0 1366x768] (521 msec)
+[log] CLICK on L(257,60)@S(0)[0,0 1366x768] (523 msec)
+[log]  TYPE "#ENTER."
+[log] CLICK on L(235,256)@S(0)[0,0 1366x768] (521 msec)
+[log]  TYPE "#ENTER."
+[log] RIGHT CLICK on L(242,252)@S(0)[0,0 1366x768] (521 msec)
+[log] CLICK on L(357,406)@S(0)[0,0 1366x768] (522 msec)
+[log] CLICK on L(789,436)@S(0)[0,0 1366x768] (520 msec)
+[log] CLICK on L(944,606)@S(0)[0,0 1366x768] (522 msec)
+[log] CLICK on L(882,185)@S(0)[0,0 1366x768] (520 msec)
+Done
+[log] CLICK on L(74,187)@S(0)[0,0 1366x768] (522 msec)
+[info] Exit code: 1
+1
+"Removing latest files"
+D:\Automation_Siebel_Project\deploy\xls\Business Component.xls
+"Applet"
+Formating User Input
+Now Compilation will Start for "Applet"
++++ running this Java
++++ trying to run SikuliX
++++ using: -Xms64M -Xmx512M -Dfile.encoding=UTF-8 -Dsikuli.FromCommandLine -jar D:\Automation_Siebel_Project\SiebelAutomationScripts\sikulix.jar -r D:\Automation_Siebel_Project\SiebelAutomationScripts\SiebelTool16_0.sikuli --args "Applet"
+[log] CLICK on L(72,204)@S(0)[0,0 1366x768] (546 msec)
+[log] CLICK on L(231,36)@S(0)[0,0 1366x768] (520 msec)
+[log] CLICK on L(257,60)@S(0)[0,0 1366x768] (521 msec)
+[log]  TYPE "#ENTER."
+[log] CLICK on L(235,256)@S(0)[0,0 1366x768] (520 msec)
+[log]  TYPE "#ENTER."
+[log] RIGHT CLICK on L(242,252)@S(0)[0,0 1366x768] (520 msec)
+[log] CLICK on L(357,352)@S(0)[0,0 1366x768] (521 msec)
+[log] CLICK on L(789,436)@S(0)[0,0 1366x768] (521 msec)
+[log] CLICK on L(944,606)@S(0)[0,0 1366x768] (523 msec)
+[log] CLICK on L(882,185)@S(0)[0,0 1366x768] (520 msec)
+Done
+[log] CLICK on L(74,187)@S(0)[0,0 1366x768] (521 msec)
+[info] Exit code: 1
+2
+"Removing latest files"
+D:\Automation_Siebel_Project\deploy\xls\Applet.xls
+"Done Compilation"
+
+Waiting for 5 seconds, press CTRL+C to quit ...43210
+"Stopping Siebel services on Remote"
+
+SERVICE_NAME: siebsrvr_NJRBTST_ET_siebsrvr1 
+        TYPE               : 110  WIN32_OWN_PROCESS  (interactive)
+        STATE              : 3  STOP_PENDING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 31  (0x1f)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x2ab98
+
+Waiting for 20 seconds, press CTRL+C to quit ...19181716151413121110 9 8 7 6 5 4 3 2 1 0
+"Starting GenB Script"
+
+Waiting for 2 seconds, press CTRL+C to quit ...10
+"Copying srf and genb to Remote"
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Tuesday, December 25, 2018 10:42:38 PM
+   Source : D:\CM\srf1545029316_444\
+     Dest : \\10.36.20.41\D$\CM\Testing\srf1545029316_444\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	  New Dir          0	D:\CM\srf1545029316_444\
+	  New Dir          0	D:\CM\srf1545029316_444\bscripts\
+	  New Dir        303	D:\CM\srf1545029316_444\bscripts\all\
+	    New File  		    1281	applet_activity_form_applet.js  0%  100%  
+	    New File  		     643	applet_compatibility_table_list_applet.js  0%  100%  
+	    New File  		   10828	applet_current_service_request_list_applet.js  0%  100%  
+	    New File  		     805	applet_fm_order_catalog_template_list_applet.js  0%  100%  
+	    New File  		     514	applet_fm_stops_assoc_applet.js  0%  100%  
+	    New File  		    2222	applet_fs_agreement_item_list_applet.js  0%  100%  
+	    New File  		     965	applet_loy_air_accrual_dispute_applet.js  0%  100%  
+	    New File  		    2326	applet_ms_quote_order_line_item_list_applet.js  0%  100%  
+	    New File  		    2284	applet_ms_quote_products_list_applet.js  0%  100%  
+	    New File  		    2194	applet_order_entry__line_item_list_applet.js  0%  100%  
+	    New File  		    2235	applet_order_entry__line_item_list_applet_sales.js  0%  100%  
+	    New File  		    2316	applet_order_entry__line_item_list_applet_sales__short.js  0%  100%  
+	    New File  		    2334	applet_order_entry__line_item_list_applet_sales__short_oui.js  0%  100%  
+	    New File  		    1759	applet_persistent_customer_dashboard_applet.js  0%  100%  
+	    New File  		    2266	applet_quote_catalog_admin_catalog_category_product_list_applet.js  0%  100%  
+	    New File  		    2198	applet_quote_catalog_product_list_applet__add_to_cart.js  0%  100%  
+	    New File  		    2164	applet_quote_catalog_template_item_list_applet.js  0%  100%  
+	    New File  		    2124	applet_quote_item_list_applet.js  0%  100%  
+	    New File  		    2174	applet_quote_item_list_applet__short.js  0%  100%  
+	    New File  		    2197	applet_quote_item_list_applet__short_oui.js  0%  100%  
+	    New File  		     610	applet_remote_client_list_applet.js  0%  100%  
+	    New File  		    2234	applet_sales_order_catalog_product_list_applet__add_to_cart.js  0%  100%  
+	    New File  		     807	applet_salutation_applet_wcc_home.js  0%  100%  
+	    New File  		     742	applet_service_request_activity_list_applet.js  0%  100%  
+	    New File  		    3730	applet_service_request_attachment_list_applet.js  0%  100%  
+	    New File  		    2376	applet_service_request_detail_applet.js  0%  100%  
+	    New File  		   14381	applet_service_request_list_applet.js  0%  100%  
+	    New File  		    6283	applet_service_request_list_applet_for_escalation.js  0%  100%  
+	    New File  		    1093	applet_service_request_mailhouse_bata_detail_applet.js  0%  100%  
+	    New File  		    2187	applet_shopping_cart_applet_cxprm.js  0%  100%  
+	    New File  		     993	applet_task_playbar_applet__bottom.js  0%  100%  
+	    New File  		     984	applet_task_playbar_applet__top.js  0%  100%  
+	    New File  		    3533	applet_today_workflow_import_popup_applet.js  0%  100%  
+	    New File  		    1030	applet_today_workflow_import_popup_applet__device_delete.js  0%  100%  
+	    New File  		    1030	applet_today_workflow_import_popup_applet__return_device.js  0%  100%  
+	    New File  		    1039	applet_today_workflow_import_popup_applet__vehicle_delete.js  0%  100%  
+	    New File  		    1910	applet_vector_account_activity_history_list_applet.js  0%  100%  
+	    New File  		   12748	applet_vector_account_address_form_applet.js  0%  100%  
+	    New File  		   13548	applet_vector_account_address_list_applet.js  0%  100%  
+	    New File  		    1861	applet_vector_account_away_agency_transactions_list_applet.js  0%  100%  
+	    New File  		    1610	applet_vector_account_collections_court_invoice_list_applet.js  0%  100%  
+	    New File  		    3215	applet_vector_account_conversion_form_applet.js  0%  100%  
+	    New File  		    1141	applet_vector_account_conversion_form_applet_old.js  0%  100%  
+	    New File  		   27983	applet_vector_account_details_bata_dsb_form_applet.js  0%  100%  
+	    New File  		    1571	applet_vector_account_details_bata_form_applet.js  0%  100%  
+	    New File  		   34965	applet_vector_account_details_dsb_form_applet.js  0%  100%  
+	    New File  		   28634	applet_vector_account_details_fb_dsb_form_applet.js  0%  100%  
+	    New File  		   35062	applet_vector_account_details_fl_dsb_form_applet.js  0%  100%  
+	    New File  		     682	applet_vector_account_details_fl_form_applet.js  0%  100%  
+	    New File  		   30898	applet_vector_account_details_la_dsb_form_applet.js  0%  100%  
+	    New File  		   28698	applet_vector_account_details_mta_dsb_form_applet.js  0%  100%  
+	    New File  		   33068	applet_vector_account_details_ncta_dsb_form_applet.js  0%  100%  
+	    New File  		   29203	applet_vector_account_details_nh_dsb_form_applet.js  0%  100%  
+	    New File  		    1559	applet_vector_account_details_nh_form_applet.js  0%  100%  
+	    New File  		    8677	applet_vector_account_details_nj_dsb_form_applet.js  0%  100%  
+	    New File  		   27958	applet_vector_account_details_ny_dsb_form_applet.js  0%  100%  
+	    New File  		   27937	applet_vector_account_details_pa_dsb_form_applet.js  0%  100%  
+	    New File  		   35001	applet_vector_account_details_txdot_dsb_form_applet.js  0%  100%  
+	    New File  		    2206	applet_vector_account_details_txdot_form_applet.js  0%  100%  
+	    New File  		    2408	applet_vector_account_device_list_applet.js  0%  100%  
+	    New File  		    5243	applet_vector_account_device_request_list_applet.js  0%  100%  
+	    New File  		    5266	applet_vector_account_device_request_toggle_list_applet.js  0%  100%  
+	    New File  		    1077	applet_vector_account_device_toll_history_list_applet.js  0%  100%  
+	    New File  		    1376	applet_vector_account_finanicials_history_list_applet.js  0%  100%  
+	    New File  		    1172	applet_vector_account_invoice_financial_list_applet_read_only.js  0%  100%  
+	    New File  		    1402	applet_vector_account_invoice_list_applet.js  0%  100%  
+	    New File  		    1653	applet_vector_account_non_financial_history_list_applet.js  0%  100%  
+	    New File  		   12503	applet_vector_account_opening_address_list_applet.js  0%  100%  
+	    New File  		    3346	applet_vector_account_opening_device_request_list_applet.js  0%  100%  
+	    New File  		    4626	applet_vector_account_opening_plan_list_applet.js  0%  100%  
+	    New File  		    1902	applet_vector_account_opening_replenishment_info_list_applet.js  0%  100%  
+	    New File  		   10542	applet_vector_account_opening_vehicle_list_applet.js  0%  100%  
+	    New File  		    1166	applet_vector_account_open_form_applet.js  0%  100%  
+	    New File  		    3940	applet_vector_account_open_plan_toggle_list_applet.js  0%  100%  
+	    New File  		    1889	applet_vector_account_open_replenishment_toggle_list_applet.js  0%  100%  
+	    New File  		   18226	applet_vector_account_payments_dsb_form_applet.js  0%  100%  
+	    New File  		    3822	applet_vector_account_plan_details_list_applet.js  0%  100%  
+	    New File  		    4168	applet_vector_account_plan_details_toggle_list_applet.js  0%  100%  
+	    New File  		     662	applet_vector_account_search_form_applet.js  0%  100%  
+	    New File  		     692	applet_vector_account_search_form_applet__old.js  0%  100%  
+	    New File  		    1301	applet_vector_account_settlement_plan_list_applet.js  0%  100%  
+	    New File  		     936	applet_vector_account_statement_info_list_applet.js  0%  100%  
+	    New File  		    3962	applet_vector_account_tag_swap_device_list_applet.js  0%  100%  
+	    New File  		   31873	applet_vector_account_task_verification__screen.js  0%  100%  
+	    New File  		     694	applet_vector_account_toll_dispute_recievables.js  0%  100%  
+	    New File  		    1153	applet_vector_account_toll_eps__financials_history_list_applet.js  0%  100%  
+	    New File  		    2516	applet_vector_account_toll_history_list_applet.js  0%  100%  
+	    New File  		    1064	applet_vector_account_toll_history_list_applet_clone.js  0%  100%  
+	    New File  		    1404	applet_vector_account_toll_history_list_applet__cloned.js  0%  100%  
+	    New File  		    1117	applet_vector_account_toll_history_read_only_list_applet.js  0%  100%  
+	    New File  		    1055	applet_vector_account_trip_history_list_applet.js  0%  100%  
+	    New File  		    1484	applet_vector_account_utc_invoice_list_applet.js  0%  100%  
+	    New File  		    6672	applet_vector_account_vehicle_form_applet.js  0%  100%  
+	    New File  		   10334	applet_vector_account_vehicle_list_applet.js  0%  100%  
+	    New File  		    1109	applet_vector_account_vehicle_plate_search_list_applet.js  0%  100%  
+	    New File  		    9127	applet_vector_account_vehicle_task_confirm_applet.js  0%  100%  
+	    New File  		    9157	applet_vector_account_vehicle_task_confirm_applet__old.js  0%  100%  
+	    New File  		    6702	applet_vector_account_vehicle_task_form_applet.js  0%  100%  
+	    New File  		    6732	applet_vector_account_vehicle_task_form_applet__old.js  0%  100%  
+	    New File  		    9109	applet_vector_account_vehicle_task_list_applet.js  0%  100%  
+	    New File  		    1343	applet_vector_account_violation_payment_plan_list_applet.js  0%  100%  
+	    New File  		    1081	applet_vector_address_activity_history_list_applet.js  0%  100%  
+	    New File  		    2715	applet_vector_all_violation_list_applet.js  0%  100%  
+	    New File  		    1754	applet_vector_authority_approval_ccu_list_applet.js  0%  100%  
+	    New File  		    1374	applet_vector_authority_approval_list_applet.js  0%  100%  
+	    New File  		    2311	applet_vector_authority_approval_list_applet__new.js  0%  100%  
+	    New File  		    1754	applet_vector_authority_approval_mva_list_applet.js  0%  100%  
+	    New File  		    1627	applet_vector_aux_mode_unlock_applet.js  0%  100%  
+	    New File  		    1861	applet_vector_away_agency_pending_transactions_list_applet.js  0%  100%  
+	    New File  		    1083	applet_vector_bankruptcy_list_applet.js  0%  100%  
+	    New File  		    2803	applet_vector_batch_plate_change_applet.js  0%  100%  
+	    New File  		     581	applet_vector_bip_parameter_applet.js  0%  100%  
+	    New File  		     641	applet_vector_bip_violation_parameter_applet.js  0%  100%  
+	    New File  		    1454	applet_vector_closeout_supervisor_form_applet.js  0%  100%  
+	    New File  		    1026	applet_vector_collection_activity_list_applet.js  0%  100%  
+	    New File  		    3798	applet_vector_collection_batch_list_applet.js  0%  100%  
+	    New File  		    1475	applet_vector_collection_invoice_list_applet.js  0%  100%  
+	    New File  		    3572	applet_vector_communication_pref_list_applet.js  0%  100%  
+	    New File  		    5069	applet_vector_companion_tag_assignment_list_applet.js  0%  100%  
+	    New File  		    4913	applet_vector_composite_payment_list_applet.js  0%  100%  
+	    New File  		    1138	applet_vector_contact_activity_history_list_applet.js  0%  100%  
+	    New File  		    6077	applet_vector_csr_closeout_deposit_form_applet.js  0%  100%  
+	    New File  		    4971	applet_vector_csr_deposits_verification_form_applet.js  0%  100%  
+	    New File  		    5052	applet_vector_csr_deposits_verification_variance_form_applet.js  0%  100%  
+	    New File  		    2731	applet_vector_ctoc_account_vehicle_form_applet.js  0%  100%  
+	    New File  		    8257	applet_vector_ctoc_account_vehicle_list_applet.js  0%  100%  
+	    New File  		    1140	applet_vector_devices_assign_list_applet.js  0%  100%  
+	    New File  		    1519	applet_vector_device_entry_form_applet.js  0%  100%  
+	    New File  		     985	applet_vector_device_number_wtoll_pick_applet.js  0%  100%  
+	    New File  		   10953	applet_vector_device_tag_program_form_applet.js  0%  100%  
+	    New File  		    4311	applet_vector_direct_payment_form_applet.js  0%  100%  
+	    New File  		    4980	applet_vector_direct_payment_transaction_list_applet.js  0%  100%  
+	    New File  		    3756	applet_vector_dmv_batch_list_applet.js  0%  100%  
+	    New File  		    1412	applet_vector_dmv_invoice_list_applet.js  0%  100%  
+	    New File  		    1035	applet_vector_dmv_rejects_list_applet.js  0%  100%  
+	    New File  		    3105	applet_vector_dmv_rejects_tor_form_applet.js  0%  100%  
+	    New File  		    1226	applet_vector_email_preferences_list_applet.js  0%  100%  
+	    New File  		    1536	applet_vector_employee_history_list_applet.js  0%  100%  
+	    New File  		     838	applet_vector_exclusion_list_applet.js  0%  100%  
+	    New File  		    1559	applet_vector_fb_account_details_form_applet.js  0%  100%  
+	    New File  		    3937	applet_vector_ghost_account_statistics_log_applet.js  0%  100%  
+	    New File  		    1334	applet_vector_image_rereview_query_list_applet.js  0%  100%  
+	    New File  		    1655	applet_vector_image_review_details_form_applet.js  0%  100%  
+	    New File  		    1781	applet_vector_image_review_update_details_form_applet.js  0%  100%  
+	    New File  		    1025	applet_vector_invoice_items_batch_dismissal_list_applet.js  0%  100%  
+	    New File  		    2467	applet_vector_invoice_toll_detail_list_applet.js  0%  100%  
+	    New File  		    1819	applet_vector_linked_accounts_popup_list_applet.js  0%  100%  
+	    New File  		    1559	applet_vector_md_account_details_form_applet.js  0%  100%  
+	    New File  		    1008	applet_vector_mobile_email_alerts_readonly_list_applet.js  0%  100%  
+	    New File  		    2198	applet_vector_mva_vehicle_list_applet.js  0%  100%  
+	    New File  		    1634	applet_vector_mvc_approval_violations_list_applet.js  0%  100%  
+	    New File  		     892	applet_vector_mvc_candidate_list_applet.js  0%  100%  
+	    New File  		    1192	applet_vector_mvc_vehicle_list_applet.js  0%  100%  
+	    New File  		    4343	applet_vector_ncta_violation_screen_tx_ebc_history_list_applet.js  0%  100%  
+	    New File  		    1260	applet_vector_new_invoice_form_applet.js  0%  100%  
+	    New File  		    1202	applet_vector_nj_account_open_form_applet.js  0%  100%  
+	    New File  		    1691	applet_vector_nj_image_audit_details_form_applet.js  0%  100%  
+	    New File  		    1709	applet_vector_nj_image_review_details_form_applet.js  0%  100%  
+	    New File  		    1645	applet_vector_nj_image_review_list_applet.js  0%  100%  
+	    New File  		    1853	applet_vector_nj_image_review_update_details_form_applett.js  0%  100%  
+	    New File  		    1537	applet_vector_notification_history_list_applet.js  0%  100%  
+	    New File  		    5482	applet_vector_one_time_payment_form_applet.js  0%  100%  
+	    New File  		    9082	applet_vector_ort_account_opening_vehicle_list_applet.js  0%  100%  
+	    New File  		    6882	applet_vector_ort_account_vehicle_form_applet.js  0%  100%  
+	    New File  		    9014	applet_vector_ort_account_vehicle_list_applet.js  0%  100%  
+	    New File  		    4358	applet_vector_ort_plan_list_applet.js  0%  100%  
+	    New File  		   14364	applet_vector_payment_file_sr_list_applet.js  0%  100%  
+	    New File  		    1235	applet_vector_payment_plan_list_applet.js  0%  100%  
+	    New File  		    2317	applet_vector_payment_reversal_list_applet.js  0%  100%  
+	    New File  		    3834	applet_vector_payment_transaction_applet.js  0%  100%  
+	    New File  		    7130	applet_vector_payment_transaction_list_applet.js  0%  100%  
+	    New File  		    2925	applet_vector_payment_tran_code_pick_applet.js  0%  100%  
+	    New File  		    1041	applet_vector_plan_activity_history_list_applet.js  0%  100%  
+	    New File  		    1961	applet_vector_postage_lable_list_applet.js  0%  100%  
+	    New File  		   12274	applet_vector_po_line_item_list_applet.js  0%  100%  
+	    New File  		    4114	applet_vector_po_line_item_receipt_list_applet.js  0%  100%  
+	    New File  		     982	applet_vector_refund_check_automation.js  0%  100%  
+	    New File  		    2702	applet_vector_refund_escalation_applet.js  0%  100%  
+	    New File  		    1694	applet_vector_refund_form_applet.js  0%  100%  
+	    New File  		    1095	applet_vector_replenishment_activity_history_list_applet.js  0%  100%  
+	    New File  		   12609	applet_vector_retailer_address_form_applet.js  0%  100%  
+	    New File  		   14098	applet_vector_retailer_address_list_applet.js  0%  100%  
+	    New File  		    2622	applet_vector_retailer_receive_popup_applet.js  0%  100%  
+	    New File  		    1576	applet_vector_return_device_scanned_form_applet.js  0%  100%  
+	    New File  		    1750	applet_vector_reversal_escalation_applet.js  0%  100%  
+	    New File  		    1510	applet_vector_settlement_plan_items_list_applet.js  0%  100%  
+	    New File  		    1263	applet_vector_settlement_plan_list_applet.js  0%  100%  
+	    New File  		    1008	applet_vector_spd_violation_transaction_list_applet_readonly.js  0%  100%  
+	    New File  		     863	applet_vector_speed_threshold_list_applet.js  0%  100%  
+	    New File  		   12282	applet_vector_sr1_list_applet.js  0%  100%  
+	    New File  		   12318	applet_vector_sr2_list_applet.js  0%  100%  
+	    New File  		     706	applet_vector_sr_activity_list_applet.js  0%  100%  
+	    New File  		    1427	applet_vector_sr_count_detail_list_applet.js  0%  100%  
+	    New File  		    1364	applet_vector_sr_count_list_applet.js  0%  100%  
+	    New File  		    3968	applet_vector_sticker_line_item_reciept_list_applet.js  0%  100%  
+	    New File  		    3718	applet_vector_tag_swap_device_list_applet.js  0%  100%  
+	    New File  		     899	applet_vector_tag_swap_planner_list_applet.js  0%  100%  
+	    New File  		    1290	applet_vector_task_ui_dashboard_form_applet.js  0%  100%  
+	    New File  		    1358	applet_vector_task_ui_start_call_form_applet.js  0%  100%  
+	    New File  		    3078	applet_vector_tev_dismissal_list_applet.js  0%  100%  
+	    New File  		    1570	applet_vector_tev_notice_list_applet__cloned.js  0%  100%  
+	    New File  		     917	applet_vector_tev_notice_list_applet__history.js  0%  100%  
+	    New File  		     929	applet_vector_tev_notice_list_applet__md_cloned.js  0%  100%  
+	    New File  		     613	applet_vector_tev_tor_form_applet.js  0%  100%  
+	    New File  		    1136	applet_vector_tev_violation_appeal_list_applet.js  0%  100%  
+	    New File  		    2925	applet_vector_tev_violation_dispute_list_applet.js  0%  100%  
+	    New File  		    1212	applet_vector_tev_violation_list_applet.js  0%  100%  
+	    New File  		    2261	applet_vector_tev_violation_max_toll_adj_list_applet.js  0%  100%  
+	    New File  		    3471	applet_vector_tev_violation_pay_list_applet.js  0%  100%  
+	    New File  		    2242	applet_vector_tev_violation_pay_list_applet_cloned.js  0%  100%  
+	    New File  		     706	applet_vector_tev_violation_pay_list_applet__md_cloned.js  0%  100%  
+	    New File  		    2724	applet_vector_tev_violation_tor_list_applet.js  0%  100%  
+	    New File  		    1020	applet_vector_tod_list_applet.js  0%  100%  
+	    New File  		    6712	applet_vector_token_payment_transaction_list_applet.js  0%  100%  
+	    New File  		    2295	applet_vector_token_replenishment_list_applet.js  0%  100%  
+	    New File  		    1759	applet_vector_toll_exceptions_list_applet.js  0%  100%  
+	    New File  		    2373	applet_vector_toll_history_tor_batch_list_applet.js  0%  100%  
+	    New File  		    3650	applet_vector_toll_tor_batch_form_applet.js  0%  100%  
+	    New File  		    3040	applet_vector_toll_tor_form_applet.js  0%  100%  
+	    New File  		    1771	applet_vector_toll_transactions_list_applet.js  0%  100%  
+	    New File  		   13833	applet_vector_transit_account_address_form_applet.js  0%  100%  
+	    New File  		   13459	applet_vector_transit_account_address_list_applet.js  0%  100%  
+	    New File  		   27420	applet_vector_transit_account_details_dsb_form_applet.js  0%  100%  
+	    New File  		    1594	applet_vector_transit_account_details_form_applet.js  0%  100%  
+	    New File  		    8484	applet_vector_transit_account_opening_address_list_applet.js  0%  100%  
+	    New File  		    9059	applet_vector_transit_account_opening_vehicle_list_applet.js  0%  100%  
+	    New File  		     457	applet_vector_transit_account_open_address_list_applet.js  0%  100%  
+	    New File  		    9032	applet_vector_transit_account_open_vehicle_list_applet.js  0%  100%  
+	    New File  		    4182	applet_vector_transit_account_plan_details_list_applet.js  0%  100%  
+	    New File  		    9040	applet_vector_transit_account_vehicle_list_applet.js  0%  100%  
+	    New File  		    1977	applet_vector_transit_apportionment_child_list_applet.js  0%  100%  
+	    New File  		    1044	applet_vector_transit_balance_transfer_form_applet.js  0%  100%  
+	    New File  		    1624	applet_vector_transit_govt_account_details_form_applet.js  0%  100%  
+	    New File  		     938	applet_vector_transit_reload_payment_list_applet.js  0%  100%  
+	    New File  		    8259	applet_vector_transit_retailer_account_address_list_applet.js  0%  100%  
+	    New File  		    7828	applet_vector_transit_retailer_addresses_form_applet.js  0%  100%  
+	    New File  		    1022	applet_vector_transit_tag_transfer_form_applet.js  0%  100%  
+	    New File  		    7129	applet_vector_unidentified_sr_list_applet.js  0%  100%  
+	    New File  		    1059	applet_vector_vehicle_activity_history_list_applet.js  0%  100%  
+	    New File  		    2578	applet_vector_violation_payment_plan_items_list_applet.js  0%  100%  
+	    New File  		    1305	applet_vector_violation_payment_plan_list_applet.js  0%  100%  
+	    New File  		    4675	applet_vector_violation_screen_tx_ebc_history_list_applet.js  0%  100%  
+	    New File  		    4591	applet_vector_violation_transaction_ebc_history_list_applet.js  0%  100%  
+	    New File  		    3408	applet_vector_violation_transaction_history_view_list_applet.js  0%  100%  
+	    New File  		    3324	applet_vector_violation_tx_history_list_applet.js  0%  100%  
+	    New File  		     924	applet_xmlp_report_schedule_applet.js  0%  100%  
+	    New File  		   20701	application_siebel_universal_agent.js  0%  100%  
+	    New File  		   13981	buscomp_account.js  0%  100%  
+	    New File  		    1034	buscomp_action.js  0%  100%  
+	    New File  		    1742	buscomp_business_address_cloned.js  0%  100%  
+	    New File  		    2827	buscomp_contact.js  0%  100%  
+	    New File  		     685	buscomp_fins_action_claims.js  0%  100%  
+	    New File  		     749	buscomp_fs_collection_invoice.js  0%  100%  
+	    New File  		     707	buscomp_fs_dmv_invoice.js  0%  100%  
+	    New File  		     683	buscomp_fs_invoice.js  0%  100%  
+	    New File  		     655	buscomp_ls_cim_action.js  0%  100%  
+	    New File  		    3023	buscomp_organization_payment_profile.js  0%  100%  
+	    New File  		     649	buscomp_pub_activity.js  0%  100%  
+	    New File  		     691	buscomp_pub_arrest_activity.js  0%  100%  
+	    New File  		    3141	buscomp_service_request.js  0%  100%  
+	    New File  		   11453	buscomp_vector_business_address.js  0%  100%  
+	    New File  		    4738	buscomp_vector_ccu_account.js  0%  100%  
+	    New File  		    4741	buscomp_vector_ccu_account1.js  0%  100%  
+	    New File  		   18239	buscomp_vector_csr_closeout.js  0%  100%  
+	    New File  		     864	buscomp_vector_dmv_holdnotice.js  0%  100%  
+	    New File  		    1540	buscomp_vector_dmv_holdrelease.js  0%  100%  
+	    New File  		    1588	buscomp_vector_dmv_holdrelease_history.js  0%  100%  
+	    New File  		     739	buscomp_vector_ecustomer_activities.js  0%  100%  
+	    New File  		    2836	buscomp_vector_email_preferences.js  0%  100%  
+	    New File  		    1598	buscomp_vector_fin_transaction.js  0%  100%  
+	    New File  		     785	buscomp_vector_fs_invoice_dashboard.js  0%  100%  
+	    New File  		    2670	buscomp_vector_payment_plan.js  0%  100%  
+	    New File  		    1622	buscomp_vector_payment_transaction.js  0%  100%  
+	    New File  		    2791	buscomp_vector_settlement_plan.js  0%  100%  
+	    New File  		    1034	buscomp_vector_speed_threshold.js  0%  100%  
+	    New File  		    4745	buscomp_vector_sub_account.js  0%  100%  
+	    New File  		    1218	buscomp_vector_tor_staging.js  0%  100%  
+	    New File  		    3646	buscomp_vector_vac_transaction.js  0%  100%  
+	    New File  		    4257	buscomp_vector_vehicle.js  0%  100%  
+	    New File  		    1588	buscomp_vector_vehicle_dmv_holdrelease.js  0%  100%  
+	    New File  		    1570	buscomp_vector_violation_ccu.js  0%  100%  
+	    New File  		    1046	buscomp_vector_violation_exclusions.js  0%  100%  
+	    New File  		    1582	buscomp_vector_violation_mvacc.js  0%  100%  
+	    New File  		    2233	buscomp_vector_violation_payment_plan.js  0%  100%  
+	    New File  		    6764	buscomp_vector_violation_pre_payment.js  0%  100%  
+	    New File  		    3478	buscomp_vector_violation_receivable.js  0%  100%  
+	    New File  		    3625	buscomp_vector_violation_receivable_clone.js  0%  100%  
+	    New File  		    3224	buscomp_vector_violation_receivable_noscript.js  0%  100%  
+	    New File  		    1676	buscomp_vector_violation_speeding.js  0%  100%  
+	    New File  		    6400	buscomp_vector_violation_transaction.js  0%  100%  
+	    New File  		    6447	buscomp_vector_violation_transaction_noscript.js  0%  100%  
+	    New File  		    6105	buscomp_vector_violation_transaction__cloned.js  0%  100%  
+	    New File  		    3619	buscomp_vector_viol_receivable_ecustomer.js  0%  100%  
+	    New File  		    6393	buscomp_vector_viol_transaction_co35.js  0%  100%  
+	    New File  		    6423	buscomp_vector_viol_transaction_ecustomer.js  0%  100%  
+	    New File  		     893	controls_applet_vector_payment_reversal_list_applet.js  0%  100%  
+	    New File  		     783	service_ls_pcd_service.js  0%  100%  
+	    New File  		     646	service_vectorphonevalidationservice.js  0%  100%  
+	    New File  		    1218	service_vector_agency_name.js  0%  100%  
+	    New File  		     824	service_vector_csr_close_out.js  0%  100%  
+	    New File  		     604	service_vector_update_cc_info.js  0%  100%  
+	    New File  		     904	service_vector_vehicle_import.js  0%  100%  
+	    New File  		    2731	service_vector_window_resize.js  0%  100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         3         3         0         0         0         0
+   Files :       303       303         0         0         0         0
+   Bytes :    1.31 m    1.31 m         0         0         0         0
+   Times :   0:00:01   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             1382597 Bytes/sec.
+   Speed :              79.112 MegaBytes/min.
+   Ended : Tuesday, December 25, 2018 10:42:39 PM
+
+"Renaming srf"
+"Copying latest srf"
+        1 file(s) copied.
+
+Waiting for 60 seconds, press CTRL+C to quit ...5958575655545352515049484746454443424140393837363534333231302928272625242322212019181716151413121110 9 8 7 6 5 4 3 2 1 0
+"Starting Siebel services on Remote"
+
+SERVICE_NAME: siebsrvr_NJRBTST_ET_siebsrvr1 
+        TYPE               : 110  WIN32_OWN_PROCESS  (interactive)
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+        PID                : 12084
+        FLAGS              : 
